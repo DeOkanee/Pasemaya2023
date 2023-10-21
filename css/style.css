@@ -87,42 +87,7 @@
   font-size: 24px;
   text-align: center;
 }
-/* Navigation burger */
-.burger-container {
-  cursor: pointer;
-  z-index: 3;
-}
-
-.bar1,
-.bar2,
-.bar3 {
-  width: 30px;
-  height: 3px;
-  background-color: #c18f59;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-.change .bar1 {
-  transform: rotate(-45deg) translate(-6px, 6px);
-  background-color: #c18f59;
-}
-
-.change .bar2 {
-  opacity: 0;
-  background-color: #c18f59;
-}
-
-.change .bar3 {
-  transform: rotate(45deg) translate(-6px, -7px);
-  background-color: #c18f59;
-}
-
-.stop-scroll {
-  overflow: hidden;
-}
-
-/* Navigation burger end */
+/* pamflet */
 .fh5co-top-banner {
   position: relative;
   display: flex;
@@ -167,6 +132,7 @@
   }
 }
 
+
 .top-banner__inner {
   padding-bottom: 10%;
   display: flex;
@@ -195,9 +161,8 @@
   .top-banner__inner .top-banner__text {
     width: 65%;
     margin-bottom: 20px;
-  }
 }
-
+}
 .top-banner__inner .top-banner__h2 {
   font-size: 70px;
   letter-spacing: 3px;
@@ -215,15 +180,46 @@
   }
 }
 .top-banner__inner .top-banner__text-up .top-banner__h2 {
-  margin-top: 15px;
+  margin-top: 10px;
 }
+@media (max-width: 1250px){
+  .top-banner__inner .top-banner__text-up .top-banner__h2{
+    font-size: 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .top-banner__inner .top-banner__text-up .top-banner__h2 {
-    margin-top: 0;
+    margin-top: 5%;
     text-align: center;
+    font-size: 25px;
+    width: 130%;
+    margin-left: -15%;
+  }
+}
+@media (max-width: 520px){
+  .top-banner__inner .top-banner__text-up .top-banner__h2{
     font-size: 20px;
   }
 }
+.top-banner__text .brand-span{
+  font-size: 25px;
+}
+@media (max-width: 768px){
+  .top-banner__text .brand-span{
+    font-size: 20px;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 520px){
+  .top-banner__text .brand-span{
+    width: 130%;
+    margin-top: 4px;
+    margin-left: -15%;
+  }
+}
+
+
 .top-banner__inner .top-banner__image {
   font-size: 0;
 }
@@ -241,9 +237,10 @@
     margin-bottom: 20px;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 768px) {
   .top-banner__inner {
     flex-direction: column;
+    width: 100%;
   }
 }
 .brand-span {
