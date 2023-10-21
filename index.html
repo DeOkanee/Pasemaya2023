@@ -215,7 +215,7 @@
 			document.querySelector(".brand-button").style.display = "none";
 		  }
 		}
-		
+	  
 		// Fungsi untuk mengatur status "daftarClicked" setelah mengklik Daftar
 		function setDaftarClicked() {
 		  localStorage.setItem("daftarClicked", "true");
@@ -223,10 +223,17 @@
 			location.reload(); // Menyegarkan halaman setelah 10 detik
 		  }, 10000);
 		}
-		
-		updateText(); // Memanggil fungsi saat halaman dimuat
-		
-		</script>
+	  
+		// Memanggil fungsi saat halaman dimuat
+		updateText();
+	  
+		// Cek apakah "daftarClicked" telah diset saat halaman dimuat
+		if (localStorage.getItem("daftarClicked")) {
+		  // Jika ya, tampilkan kembali tautan "Daftar"
+		  document.querySelector(".brand-button").style.display = "block";
+		}
+	  </script>
+	  
 	  
 	<!-- Scripts -->
 	<script src="js/jquery.min.js"></script>
