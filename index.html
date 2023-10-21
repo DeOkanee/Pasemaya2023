@@ -48,7 +48,7 @@
 			<div>
 				<span class="brand-span">Peserta Pasemaya 2023</span>
 			</div>
-			<a href="https://forms.gle/mf8TzA6jexrr6HUSA" class="brand-button">Daftar</a>
+			<a href="https://forms.gle/mf8TzA6jexrr6HUSA" class="brand-button" id="daftar-link">Daftar</a>
 		  </div>
 		</div>
 	  </section>
@@ -200,7 +200,17 @@
 		</div>
 	</footer>
 	<!-- Footer end -->
+	<!--Mmenghilang tautan DAFTAR-->
+	<script>
+        // Mendapatkan tautan "Daftar" berdasarkan ID
+        var daftarLink = document.getElementById('daftar-link');
 
+        // Menambahkan event listener untuk menghapus tautan setelah di-klik
+        daftarLink.addEventListener('click', function() {
+            // Menghapus elemen tautan
+            daftarLink.remove();
+        });
+    </script>
 	<!-- Scripts -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>

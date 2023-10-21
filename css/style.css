@@ -345,6 +345,10 @@
   color: #c18f59;
   font-family: "Calisto-MT-Bold";
 }
+.single-blog .single-blog__text a:hover{
+background-color: #c18f59;
+color: black;
+}
 .single-blog .single-blog__text a {
   color: #2b2b2b;
   line-height: 21px;
