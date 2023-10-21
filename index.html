@@ -48,7 +48,7 @@
 			<div>
 				<span class="brand-span">Peserta Pasemaya 2023</span>
 			</div>
-			<a href="https://forms.gle/mf8TzA6jexrr6HUSA" class="brand-button" id="daftar-button">Daftar</a>
+			<a href="https://forms.gle/mf8TzA6jexrr6HUSA" class="brand-button" onclick="setDaftarClicked()">Daftar</a>
 
 		  </div>
 		</div>
@@ -203,17 +203,30 @@
 	<!-- Footer end -->
 	<!--Mmenghilang tautan DAFTAR-->
 	<script>
-		// Fungsi untuk mengubah teks dan menonaktifkan tautan
-		function ubahTeksDanNonaktifkanTautan() {
-        document.querySelector(".top-banner__text-up h2").textContent = "Anda sudah";
-        document.querySelector(".top-banner__text-down h2").textContent = "Terdaftar";
-        document.getElementById("daftar-button").innerText = "Anda sudah Terdaftar";
-        document.getElementById("daftar-button").style.pointerEvents = "none"; // Menonaktifkan tautan
-    }
-
-    // Tunggu 7 detik sebelum memanggil fungsi ubahTeksDanNonaktifkanTautan
-    setTimeout(ubahTeksDanNonaktifkanTautan, 7000);
-	  </script>
+		function updateText() {
+		  // Cek apakah user telah mengklik daftar
+		  if (localStorage.getItem("daftarClicked")) {
+			// Mengubah teks "Silahkan" menjadi "Anda sudah"
+			document.querySelector(".top-banner__h2").innerText = "Anda sudah";
+			// Mengubah teks "Mendaftar" menjadi "Terdaftar"
+			document.querySelector(".top-banner__text-down .top-banner__h2").innerText = "Terdaftar";
+			
+			// Menghilangkan tautan "Daftar"
+			document.querySelector(".brand-button").style.display = "none";
+		  }
+		}
+		
+		// Fungsi untuk mengatur status "daftarClicked" setelah mengklik Daftar
+		function setDaftarClicked() {
+		  localStorage.setItem("daftarClicked", "true");
+		  setTimeout(function() {
+			location.reload(); // Menyegarkan halaman setelah 10 detik
+		  }, 10000);
+		}
+		
+		updateText(); // Memanggil fungsi saat halaman dimuat
+		
+		</script>
 	  
 	<!-- Scripts -->
 	<script src="js/jquery.min.js"></script>
