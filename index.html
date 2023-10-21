@@ -216,8 +216,12 @@
 	  </script>
     <script>
 		async function start() {
+			const imageUrl = './images/img.jpg'
 		  await swals.fire({
-			icon: "info",
+			imageUrl: imageUrl,
+  			imageWidth: 400,
+ 			imageHeight: 200,
+ 			imageAlt: 'Custom image',
 			title:"Om Swastyastu",
           text: "Bagi Para Peserta Lomba Silahkan Memilih Lomba yang Akan Diikuti Dibawah ini",
 		  });
