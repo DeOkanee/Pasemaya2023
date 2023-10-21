@@ -48,7 +48,7 @@
 			<div>
 				<span class="brand-span">Peserta Pasemaya 2023</span>
 			</div>
-			<a href="https://forms.gle/mf8TzA6jexrr6HUSA" class="brand-button" onclick="daftar()">Daftar</a>
+			<a href="https://forms.gle/mf8TzA6jexrr6HUSA" class="brand-button" id="daftar-button">Daftar</a>
 
 		  </div>
 		</div>
@@ -203,18 +203,16 @@
 	<!-- Footer end -->
 	<!--Mmenghilang tautan DAFTAR-->
 	<script>
-		// Fungsi ini akan dipanggil saat tombol "Daftar" diklik
-		function daftar() {
-		  // Ubah teks "Silahkan" menjadi "Anda sudah"
-		  document.querySelector('.top-banner__text-up h2').textContent = "Anda sudah";
-		  
-		  // Ubah teks "Mendaftar" menjadi "Terdaftar"
-		  document.querySelector('.top-banner__text-down h2').textContent = "Terdaftar";
-		  
-		  // Hapus tombol "Daftar"
-		  var daftarButton = document.querySelector('.brand-button');
-		  daftarButton.parentNode.removeChild(daftarButton);
-		}
+		// Fungsi untuk mengubah teks dan menonaktifkan tautan
+		function ubahTeksDanNonaktifkanTautan() {
+        document.querySelector(".top-banner__text-up h2").textContent = "Anda sudah";
+        document.querySelector(".top-banner__text-down h2").textContent = "Terdaftar";
+        document.getElementById("daftar-button").innerText = "Anda sudah Terdaftar";
+        document.getElementById("daftar-button").style.pointerEvents = "none"; // Menonaktifkan tautan
+    }
+
+    // Tunggu 7 detik sebelum memanggil fungsi ubahTeksDanNonaktifkanTautan
+    setTimeout(ubahTeksDanNonaktifkanTautan, 7000);
 	  </script>
 	  
 	<!-- Scripts -->
