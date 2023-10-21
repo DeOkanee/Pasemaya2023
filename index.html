@@ -16,6 +16,10 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/CP.css">
 	<link rel="shortcut icon" href="/images/ICON web.png" />
+	<!--Pop UP-->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+	<!--pop up-->
 	<title>Pasemaya BemFda 2023</title>
 </head>
 <body>
@@ -55,6 +59,7 @@
 	<section class="fh5co-blog">
 		<div class="site-container">
 			<h2 class="universal-h2 universal-h2-bckg">Lomba-lomba</h2>
+			<h1 class="universal-h1">Silahkan Pilih Lomba yang Diikuti</h1>
 			<div class="blog-slider blog-inner">
 				<!--lomba 1-->
 				<div class="single-blog">
@@ -201,5 +206,48 @@
 	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
 
+	<!--MUNCUL AWAL-->
+	<script>
+		//pertama muncul
+		const swals = Swal.mixin({
+		  cancelButtonColor: "#DC143C",
+		  confirmButtonColor: "#00008B",
+		  allowOutsideClick: false,
+		});
+		const swap = iloveu.mixin({
+		  cancelButtonColor: "#909090",
+		  confirmButtonColor: "#2B2B2B",
+		  allowOutsideClick: true,
+		});
+	  </script>
+    <script>
+		async function start() {
+		  await swals.fire({
+			icon: "info",
+          text: "Bagi Para Peserta Lomba Silahkan Daftar Terlebih Dahulu",
+		  });
+		  setTimeout(mulai, 900);
+		  play();
+		}
+		start();
+  
+		function showDiv() {
+		  document.getElementById("fotogoy").style.animation =
+			"fotogoy 2s ease infinite";
+		  document.getElementById("Content").style.opacity = "5";
+		}
+  
+		function mulai() {
+		  ketiknm();
+		  showDiv();
+		}
+  
+		function ketiknm() {
+		  document.getElementById("pergeseran").style.opacity = "1";
+		  document.getElementById("pergeseran").style.visibility = "visible";
+		  document.getElementById("pergeseran").tyle.margin = "10px 0";
+		}
+		//pertama
+	  </script>
 </body>
 </html>
