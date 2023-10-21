@@ -40,16 +40,9 @@
 		  </div>
 		  <div class="top-banner__text">
 			<div class="top-banner__text-up">
-			  <h2 class="top-banner__h2">Silahkan</h2>
+			  <h2 class="top-banner__h2">Cilpacastra Nawasena</h2>
 			</div>
-			<div class="top-banner__text-down">
-			  <h2 class="top-banner__h2">Mendaftar</h2>
-			</div>
-			<div>
-				<span class="brand-span">Peserta Pasemaya 2023</span>
-			</div>
-			<a href="https://forms.gle/mf8TzA6jexrr6HUSA" class="brand-button"  onclick="setDaftarClicked()">Daftar</a>
-
+			<span class="brand-span">Upaya menciptakan masa depan cerah untuk generasi muda lewat kreativitas seni dan budaya</span>
 		  </div>
 		</div>
 	  </section>
@@ -201,32 +194,6 @@
 		</div>
 	</footer>
 	<!-- Footer end -->
-	<!--Mmenghilang tautan DAFTAR-->
-	<script>
-		function updateText() {
-		  // Cek apakah user telah mengklik daftar
-		  if (localStorage.getItem("daftarClicked")) {
-			// Mengubah teks "Silahkan" menjadi "Anda sudah"
-			document.querySelector(".top-banner__h2").innerText = "Anda sudah";
-			// Mengubah teks "Mendaftar" menjadi "Terdaftar"
-			document.querySelector(".top-banner__text-down .top-banner__h2").innerText = "Terdaftar";
-			
-			// Menghilangkan tautan "Daftar"
-			document.querySelector(".brand-button").style.display = "none";
-		  }
-		}
-		
-		// Fungsi untuk mengatur status "daftarClicked" setelah mengklik Daftar
-		function setDaftarClicked() {
-		  localStorage.setItem("daftarClicked", "true");
-		  setTimeout(function() {
-			location.reload(); // Menyegarkan halaman setelah 10 detik
-		  }, 10000);
-		}
-		
-		updateText(); // Memanggil fungsi saat halaman dimuat
-		
-		</script>
 	  
 	<!-- Scripts -->
 	<script src="js/jquery.min.js"></script>
@@ -251,12 +218,8 @@
 		async function start() {
 		  await swals.fire({
 			icon: "info",
-			title:"Dibatasi 1 Kali Daftar",
-          text: "Bagi Para Peserta Lomba Silahkan Daftar Terlebih Dahulu",
-		  });
-		  await swals.fire({
-			icon:"info",
-			text:"Setelah Selesai Daftar Silahkan Pilih Lomba yang Akan Diikuti Dibawah ini",
+			title:"Om Swastyastu",
+          text: "Bagi Para Peserta Lomba Silahkan Memilih Lomba yang Akan Diikuti Dibawah ini",
 		  });
 		  setTimeout(mulai, 900);
 		  play();
