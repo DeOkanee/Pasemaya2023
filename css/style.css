@@ -508,6 +508,7 @@
   transition: 0.3s ease;
 }
 .span-arrow:hover {
+  background-color: #c18f59;
   color: #313131;
   border-color: #2c2c2c;
 }
