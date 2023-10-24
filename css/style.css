@@ -587,8 +587,94 @@
   }
 }
 /*artikel*/
+/*LOKASI MAPS*/
+.lokasi-lomba{
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 35px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.maps{
+  margin-left: 13%;
+}
+.lokasi-text {
+  display: flex;
+  align-items: center;
+  margin-left: 12%;
+  color: #000;
+  font-size: 30px;
+}
+iframe{
+  width:600px;
+  height:450px; 
+  box-shadow: 0 0  10px 5px black;
+}
+@media (max-width: 1250px){
+  .lokasi-lomba{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .maps{
+    margin-right: 0;
+    margin-left: 4%;
+  }
+  .lokasi-text{
+    margin-left: 2%;
+    font-size: 25px;
+  }
+  iframe{
+    width: 500px;
+    height: 350px;
+  }
+}
+@media (max-width: 768px){
+  .lokasi-lomba{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .maps{
+    margin-right: 6%;
+  }
+  .lokasi-text{
+    margin-bottom: 40px;
+    margin-top: 10px;
+    font-size: 19px;
+  }
+  iframe{
+    width: 400px;
+    height: 330px;
+  }
+}
+@media (max-width: 520px) {
+  .lokasi-lomba {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 
+  .maps {
+    margin-right: 5%;
+  }
 
+  .lokasi-text{
+    margin-left: 0;
+    font-size: 18px;
+  }
+
+  iframe {
+    width: 270px;
+    height: 250px;
+  }
+}
+
+/*LOKASI MAPS*/
 /* sosial*/
 .fh5co-social {
   position: relative;
