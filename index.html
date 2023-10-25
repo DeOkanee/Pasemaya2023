@@ -62,8 +62,11 @@
 					<div class="single-blog__text">
 						<h4>Tari Condong <br>Tingkat SD Se-Bali </h4>
 						<span>Pendaftaran dibawah ini</span>
-						<a id="daftar" href="#">Daftar</a>
-						<a id="Ketentuan" href="#">Ketentuan</a>
+						<div id="daftar-condong">
+							<a href="#">Daftar</a>
+							<a href="#">Ketentuan</a>
+						</div>
+					
 					</div>
 				</div>
 				<!--lomba 2-->
@@ -76,8 +79,10 @@
 					<div class="single-blog__text">
 						<h4>Gender Wayang <br>Tingkat SD & SMP Se-Bali </h4>
 						<span>Pendaftaran dibawah ini</span>
-						<a id="daftar" href="#">Daftar</a>
-						<a id="Ketentuan" href="#">Ketentuan</a>
+						<div id="daftar-condong">
+							<a href="#">Daftar</a>
+							<a href="#">Ketentuan</a>
+						</div>
 					</div>
 				</div>
 				<!--lomba 3-->
@@ -233,30 +238,9 @@
 	<script src="js/main.js"></script>
 
 	<!--MUNCUL AWAL-->
+	<script src="./js/CONDONG.js"></script>
+	<script src="./js/GENDER.js"></script>
 	<!--CLOSE PENDAFTARAN-->
-	<!--POP UP-->
-    <script>
-		//muncul saat di klik
-		const daftar = document.getElementById("daftar");
-		daftar.addEventListener("click", function () {
-		  Swal.fire({
-			icon: "info",
-			title: "Oops...",
-			text: "Pendaftaran Sudah Ditutup !",
-		  });
-		});
-  
-		const formulir = document.getElementById("Ketentuan");
-		formulir.addEventListener("click", function () {
-		  Swal.fire({
-			icon: "info",
-			title: "Oops...",
-			text: "Ketentuan Sudah Ditutup !",
-		  });
-		});
-
-	  </script>
-	  	<!--CLOSE PENDAFTARAN-->
 	<script>
 		//pertama muncul
 		const swals = Swal.mixin({
@@ -264,13 +248,7 @@
 		  confirmButtonColor: "#00008B",
 		  allowOutsideClick: false,
 		});
-		const swap = iloveu.mixin({
-		  cancelButtonColor: "#909090",
-		  confirmButtonColor: "#2B2B2B",
-		  allowOutsideClick: true,
-		});
-	  </script>
-    <script>
+
 		async function start() {
 			const imageUrl = './images/img.jpg'
 		  await swals.fire({
