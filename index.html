@@ -13,10 +13,12 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/CP.css">
 	<link rel="shortcut icon" href="/images/ICON web.png" />
-	<!--Pop UP-->
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
-	<!--pop up-->
+		  	<!--Pop UP-->
+			  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+			  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+			  <script src="sweetalert2.min.js"></script><link rel="stylesheet" href="sweetalert2.min.css">
+			  <!--pop up-->
+		 
 	<title>Pasemaya BemFda 2023</title>
 </head>
 <body>
@@ -62,7 +64,7 @@
 					<div class="single-blog__text">
 						<h4>Tari Condong <br>Tingkat SD Se-Bali </h4>
 						<span>Pendaftaran dibawah ini</span>
-						<div id="daftar-condong">
+						<div id="condong">
 							<a href="#">Daftar</a>
 							<a href="#">Ketentuan</a>
 						</div>
@@ -79,7 +81,7 @@
 					<div class="single-blog__text">
 						<h4>Gender Wayang <br>Tingkat SD & SMP Se-Bali </h4>
 						<span>Pendaftaran dibawah ini</span>
-						<div id="daftar-condong">
+						<div id="gender">
 							<a href="#">Daftar</a>
 							<a href="#">Ketentuan</a>
 						</div>
@@ -236,21 +238,19 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
-
+	<!--pop up-->
+	<script src="js/POP UP TUTUP.js"></script>
 	<!--MUNCUL AWAL-->
-	<script src="./js/CONDONG.js"></script>
-	<script src="./js/GENDER.js"></script>
 	<!--CLOSE PENDAFTARAN-->
 	<script>
-		//pertama muncul
 		const swals = Swal.mixin({
-		  cancelButtonColor: "#DC143C",
-		  confirmButtonColor: "#00008B",
-		  allowOutsideClick: false,
-		});
+        cancelButtonColor: "#DC143C",
+        confirmButtonColor: "#00008B",
+        allowOutsideClick: true,
+      });
 
 		async function start() {
-			const imageUrl = './images/img.jpg'
+		const imageUrl = './images/img.jpg'
 		  await swals.fire({
 			imageUrl: imageUrl,
   			imageWidth: 400,
@@ -263,24 +263,7 @@
 		  play();
 		}
 		start();
-  
-		function showDiv() {
-		  document.getElementById("fotogoy").style.animation =
-			"fotogoy 2s ease infinite";
-		  document.getElementById("Content").style.opacity = "5";
-		}
-  
-		function mulai() {
-		  ketiknm();
-		  showDiv();
-		}
-  
-		function ketiknm() {
-		  document.getElementById("pergeseran").style.opacity = "1";
-		  document.getElementById("pergeseran").style.visibility = "visible";
-		  document.getElementById("pergeseran").tyle.margin = "10px 0";
-		}
-		//pertama
 	  </script>
+
 </body>
 </html>
