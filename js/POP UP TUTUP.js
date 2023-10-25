@@ -28,15 +28,6 @@ kekereb.addEventListener("click", function () {
   });
 });
 
-/* LOMBA OGOH*/
-const ogoh = document.getElementById("ogoh");
-ogoh.addEventListener("click", function () {
-  Swal.fire({
-    icon: "info",
-    title: "Oops...",
-    text: "Pendaftaran dan Ketentuan Lomba Ogoh-ogoh mini Sudah Ditutup !",
-  });
-});
 
 /* LOMBA TAPEL*/
 const tapel = document.getElementById("tapel");
@@ -47,3 +38,15 @@ tapel.addEventListener("click", function () {
     text: "Pendaftaran dan Ketentuan Lomba Tapel Raksasa Sudah Ditutup !",
   });
 });
+
+/* LOMBA OGOH*/
+const ogoh = document.getElementById("ogoh");
+ogoh.addEventListener("click", function () {
+  Swal.fire({
+    icon: "info",
+    title: "Oops...",
+    text: "Pendaftaran dan Ketentuan Lomba Ogoh-ogoh mini Sudah Ditutup !",
+  });
+});
+
+
