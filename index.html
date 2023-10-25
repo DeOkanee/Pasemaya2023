@@ -53,6 +53,8 @@
 			<h1 class="universal-h1">Silahkan Pilih Lomba yang Akan Diikuti</h1>
 			<div class="blog-slider blog-inner">
 				<!--lomba 1-->
+				<!--link daftar :https://forms.gle/Yi4yEBaguG58yY1L9 -->
+				<!--link ketentuan :https://docs.google.com/document/d/1bqdJmv506zCbj9ELA7WM0JY6zjwbYRmC/edit?usp=sharing&ouid=109928911576452575685&rtpof=true&sd=true -->
 				<div class="single-blog">
 					<div class="single-blog__img">
 						<img src="./images/1 condong-01.jpg" alt="blog image">
@@ -60,8 +62,8 @@
 					<div class="single-blog__text">
 						<h4>Tari Condong <br>Tingkat SD Se-Bali </h4>
 						<span>Pendaftaran dibawah ini</span>
-						<a href="https://forms.gle/Yi4yEBaguG58yY1L9">Daftar</a>
-						<a href="https://docs.google.com/document/d/1bqdJmv506zCbj9ELA7WM0JY6zjwbYRmC/edit?usp=sharing&ouid=109928911576452575685&rtpof=true&sd=true">Ketentuan</a>
+						<a id="daftar" href="#">Daftar</a>
+						<a id="Ketentuan" href="#">Ketentuan</a>
 					</div>
 				</div>
 				<!--lomba 2-->
@@ -229,6 +231,30 @@
 	<script src="js/main.js"></script>
 
 	<!--MUNCUL AWAL-->
+	<!--CLOSE PENDAFTARAN-->
+	<!--POP UP-->
+    <script>
+		//muncul saat di klik
+		const daftar = document.getElementById("daftar");
+		daftar.addEventListener("click", function () {
+		  Swal.fire({
+			icon: "info",
+			title: "Oops...",
+			text: "Pendaftaran Sudah Ditutup !",
+		  });
+		});
+  
+		const formulir = document.getElementById("Ketentuan");
+		formulir.addEventListener("click", function () {
+		  Swal.fire({
+			icon: "info",
+			title: "Oops...",
+			text: "Ketentuan Sudah Ditutup !",
+		  });
+		});
+
+	  </script>
+	  	<!--CLOSE PENDAFTARAN-->
 	<script>
 		//pertama muncul
 		const swals = Swal.mixin({
