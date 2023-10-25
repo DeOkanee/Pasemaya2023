@@ -4,7 +4,7 @@ condong.addEventListener("click", function () {
   Swal.fire({
     icon: "info",
     title: "Oops...",
-    text: "Pendaftaran dan Ketentuan Sudah Ditutup !",
+    text: "Pendaftaran dan Ketentuan Lomba Tari Condong Sudah Ditutup !!"
   });
 });
 
@@ -14,7 +14,7 @@ gender.addEventListener("click", function () {
   Swal.fire({
     icon: "info",
     title: "Oops...",
-    text: "Pendaftaran dan Ketentuan Sudah Ditutup !",
+    text: "Pendaftaran dan Ketentuan Lomba Gender Wayang Sudah Ditutup !!",
   });
 });
 
@@ -24,7 +24,7 @@ kekereb.addEventListener("click", function () {
   Swal.fire({
     icon: "info",
     title: "Oops...",
-    text: "Pendaftaran dan Ketentuan Sudah Ditutup !",
+    text: "Pendaftaran dan Ketentuan Lomba Kekereb Sudah Ditutup !",
   });
 });
 
@@ -34,7 +34,7 @@ ogoh.addEventListener("click", function () {
   Swal.fire({
     icon: "info",
     title: "Oops...",
-    text: "Pendaftaran dan Ketentuan Sudah Ditutup !",
+    text: "Pendaftaran dan Ketentuan Lomba Ogoh-ogoh mini Sudah Ditutup !",
   });
 });
 
@@ -44,6 +44,6 @@ tapel.addEventListener("click", function () {
   Swal.fire({
     icon: "info",
     title: "Oops...",
-    text: "Pendaftaran dan Ketentuan Sudah Ditutup !",
+    text: "Pendaftaran dan Ketentuan Lomba Tapel Raksasa Sudah Ditutup !",
   });
 });
